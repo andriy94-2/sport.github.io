@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Турники</title>
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="css/bootstrap-grid.min.css">
+     <link rel="stylesheet" href="css/style.css">
+     <link rel="stylesheet" href="css/media.css">
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+      <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,700" rel="stylesheet">
+    
+
+</head>
+
+    
+<body>
+ 
+ <script type='text/javascript'>
+function validate(){
+   //Считаем значения из полей name и email в переменные x и y
+   var x=document.forms['form']['name'].value;
+   var y=document.forms['form']['email'].value;
+   //Если поле name пустое выведем сообщение и предотвратим отправку формы
+   if (x.length==0){
+      document.getElementById('namef').innerHTML='*данное поле обязательно для заполнения';
+      return false;
+   }
+   //Если поле email пустое выведем сообщение и предотвратим отправку формы
+   if (y.length==0){
+      document.getElementById('emailf').innerHTML='*данное поле обязательно для заполнения';
+      return false;
+   }
+   //Проверим содержит ли значение введенное в поле email символы @ и .
+   at=y.indexOf("@");
+   dot=y.indexOf(".");
+   //Если поле не содержит эти символы знач email введен не верно
+   if (at<1 || dot <1){
+      document.getElementById('emailf').innerHTML='*email введен не верно';
+      return false;
+   }
+
+}
+</script>
+ 
+ 
+ 
+  <header>
+    <div class="container">
+        <div class="row justify-content-between">
+            <div class="col-md-auto">
+                <a href="#"><img class="logo" src="img/logo.png" alt=""></a>
+                <p>Турник - брусья - пресс(3 в 1)</p>
+            </div>
+            <div class="col-md-auto order-header">
+                   <a class="tel" href="8(929)700-28-75"><span>8(929)</span>700-28-75</a><br>
+                <a class="order" href="#" onClick="getElementById('window-call').removeAttribute('style');" type="button">Заказать звонок</a>
+                
+            </div>
+        </div>
+    </div>
+    
+    <div id="window-call" style="display:none;">
+      <div class="overlay"></div>
+      <div class="visible">
+             <button type="button" onClick="getElementById('window-call').style.display='none';"><i class="fa fa-times fa-2x" aria-hidden="true"></i></button>
+            <h4>Заказать звонок</h4>
+        <form action="">
+              <input type="text" name="name" placeholder="Имя">
+              <input type="text" name="tel" placeholder="Телефон" >
+              <a href="#">Заказать</a>
+        </form>
+      </div>
+    </div>
+ </header>
+    
+    <section id="baner">
+        <div class="container">
+            <div class="row justify-content-between">
+                <div class="col-md-4">
+                   <div class="stock">
+                       <p>4 500р</p>
+                    <p>3 890</p>
+                   </div>
+                </div>
+                <div class="col-md-4 form-order">
+                    <div class="block-buy">
+                        <h3>Успей купить</h3>
+                        <p>и наш специалист свяжется с Вами</p>
+                    </div>
+                    <form name="form" onsubmit='return validate()'>
+                        <input type='text' name='name' placeholder="Имя"> <span style='color:red' id='namef'></span>
+<input type='text' name='email' placeholder="E-mail"> <span style='color:red' id='emailf'></span>
+                            <input type='text' name='tel' placeholder="Телефон"> <span style='color:red' id='telf'></span>
+                             <label>
+                    <input class="checkbox" type="checkbox" name="checkbox-test">
+                    <span class="checkbox-custom"></span>
+                                 <p class="label">Крюки для перекладины и тяги (<span>650</span> руб.)</p>
+                    
+                </label><br>
+                                    <label>
+                    <input class="checkbox" type="checkbox" name="checkbox-test">
+                    <span class="checkbox-custom"></span>
+                    <p class="label">Резиновые петли (<span>750</span> руб.)</p>
+                    
+                </label>
+                        <input class="send" type='submit' value='Заказать'>
+                    </form>
+                    <div class="discount clearfix">
+                     <div class="dis-stock">
+                     <p class="dis-p1">Акция!</p>
+                     <p class="dis-p2">Скидка</p>
+                     <p class="dis-p3">15%</p>
+                     </div>
+                      <div class="timer">
+                          <h4>До конца акции осталось:</h4>
+                        <script src="http://megatimer.ru/s/f0d4bcbf1a1eb95d89d4667f16d9f8bb.js"></script>
+                      </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section id="services">
+        <div class="container">
+            <div class="row services-block">
+                <div class="col-md-4 col-sm-6 services-block1">
+                    <div class="img-services">
+                        <img src="img/Muscular.png" alt="">
+                    </div>
+                    <div class="text-serv">
+                        <h4>Более 3000</h4>
+                        <p>довольних спортсменов</p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6  services-block2">
+                    <div class="img-services">
+                        <img src="img/Weighed.png" alt="">
+                    </div>
+                    <div class="text-serv">
+                        <h4>Нагрузка до 300 кг</h4>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6  services-block3">
+                    <div class="img-services">
+                        <img src="img/3.png" alt="">
+                    </div>
+                    <div class="text-serv">
+                        <h4>3 года гарантии</h4>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6  services-block4">
+                    <div class="img-services">
+                        <img src="img/Verification.png" alt="">
+                    </div>
+                    <div class="text-serv">
+                        <h4>10 дней на возврат</h4>
+                        <p>(без скандалов и экспертиз)</p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6  services-block5">
+                    <div class="img-services">
+                        <img src="img/Delivery.png" alt="">
+                    </div>
+                    <div class="text-serv">
+                        <h4>Доставка</h4>
+                        <p>(по желанию)</p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6  services-block6">
+                    <div class="img-services">
+                        <img src="img/Wrench.png" alt="">
+                    </div>
+                    <div class="text-serv">
+                        <h4>Установка</h4>
+                        <p>(по желанию)</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section id="characteristic">
+        <div class="container">
+              <h3>Характеристика</h3>
+            <div class="row">
+                <div class="col-md">
+                    <div class="charact-price">
+                       <div class="charact-price-bl1">
+                           <p>Цена <span>4 500 р</span> 3890 р</p>
+                       </div>
+                       <div class="charact-price-bl2">
+                           <p>-15%</p>
+                       </div>
+                    </div>
+                    <div class="charact-img">
+                        <img src="img/iedalnyy.jpg" alt="" width="300" height="300">
+                    </div>
+                </div>
+                <div class="col-md character-list">
+                   <ul>
+                    <li>Габариты "Турник Брусья Пресс 3в1":</li>
+                    <li>- Длина перекладины 110 см</li>
+                    <li>- Вынос турника от стены 50 см</li>
+                    <li>- Вынос брусьев от стены 80 см</li>
+                    <li>- Расстояние между брусьями 60 см</li>  
+                   </ul>
+                 
+                    <ul>
+                    <li>Комплектация :</li>
+                    <li>- тренажер "Турник + брусья + пресс 3в1"</li>
+                    <li>- 4 кронштейна</li>
+                    <li>- 8 анкерных болтов</li>
+                    <li>- 8 мягких ручек (2 длинные и 6 коротких)</li>
+                    <li>- 2 мягких подлокотника</li>
+                    <li>- 1 мягкая подушка под спину</li>
+                    <li>- кольцо для подвески мешков и груш</li>
+                    <li>- 8 круглых заглушек</li>  
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section id="form-bg-y">
+        <div class="container">
+            <div class="row">
+                <form action="">
+                     <input type="text" name="name" placeholder="Имя">
+                              <input type="text" name="tel" placeholder="Телефон" >
+                             <input type="text" name="mail" placeholder="E-mail">
+                              <a href="#">Заказать</a>
+                </form>
+            </div>
+        </div>
+    </section>
+    
+    <section id="discription">
+        <div class="container">
+            <div class="row">
+                <h3>Описание</h3>
+                <p>Итак, первая функция тренажера – турник. Он приспособлен как для подтягивания широким, так и узким хватом. Для выполнения последнего, на турнике существует две параллельные ручки. Многие производители пренебрегают именно данной деталью на своих изделиях. Поэтому, при выборе тренажера, на это стоит обращать внимание. Кроме того перекладина, на которую крепиться турник, усиленна специальной распоркой, позволяющая выдерживать вес до 350 килограммов.</p>
+                <p>Упражнения на подтягивания задействуют практически все мышцы спины: верхнюю, боковую и нижнюю ее половину. Прокачивают большую и малую грудную мышцу, а также эффективно работает с бицепсом и трицепсом.Всего одним движением рук турник превращается в брусья. Для спины и локтей здесь предназначены мягкие накладки из кожзама. Это необходимо для того, чтобы качать пресс было максимально комфортно. А ручки для упражнений на брусьях имеют неопреновые накладки, которые также не позволяют потеть ладоням и натирать мозоли. Такие же защитные накладки имеются и на турнике.
+                С помощью брусьев вы эффективней прокачаете трицепс и большую грудную мышцу, а упражнения на пресс сделают ваш живот аккуратным и красивым.
+                </p>
+            </div>
+        </div>
+    </section>
+    
+    <section id="goods">
+        <div class="container">
+             <h3>Сопутствующие товары</h3>
+            <div class="row">
+                <div class="col-md-4 hooks-img">
+                   <div class="hooks-img-text">
+                       <p>Крюки для перекладины</p>
+                   </div>
+                    <img src="img/krk.jpg" alt="" width="500" height="375">
+                </div>
+                 <div class="col-md-8 hooks-text">
+                        <p><span>Крюки для перекладины</span> служат для уменьшения нагрузки на мышцы и связки предплечий.<br>
+Используются во время выполнения таких упражнений как: подтягивание на перекладине, упражнения становой тяги, упражнения для брюшного пресса в состоянии вися на перекладине, шраги с гантелями, тяга гантелей и штанги в наклоне и многих других упражнений в которых основная нагрузка идет на мышцы предплечья.<br> 
+Крюки для перекладины и тягы предназначены для стабилизации и улучшения хвата, что позволяет вам снять нагрузку с кистей и сконцентрироваться на конкретных мышцах. </p>
+                   
+                </div>
+                <div class="row">
+                       <div class="col-md-4 loops-img">
+                       <div class="loops-img-text">
+                       <p>Резиновые петли</p>
+                   </div>
+                       <img src="img/petl.jpg" alt="" width="400" height="340">
+                </div>
+                    <div class="col-md-8 loops-text">
+                        <p><span>Резиновые петли</span> широко применяются в STREET WORKOUT в процессе:</p>
+                        <ul>
+                            <li>- растяжки и разминки;</li>
+                            <li>- обучения подтягиваниям, отжиманиям (ассистирующая функция);</li>
+                            <li>- освоения сложных гимнастических упражнений на кольцах, брусьях и турнике (ассистирующая функция);</li>
+                            <li>- развития взрывной силы и скоростно-силовых качеств;</li>
+                            <li>- поддержания физических кондиций вне спортзала;</li>
+                            <li>- реабилитации и восстановления.</li>
+                        </ul>
+                </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section id="video-page"> 
+        <div class="container video-bg">
+           <h3>Видео</h3>
+            <div class="row justify-content-end">
+                <div class="video">
+                    <h4>Видео Отзыв о Домашнем Турник Брусья Пресс 3 в 1</h4>
+                    <iframe width="500" height="300" src="https://www.youtube.com/embed/lFhqomvVBZI" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                    <h4>Видео обзор о Домашнем Турник Брусья Пресс 3 в 1</h4>
+                    <iframe width="500" height="300" src="https://www.youtube.com/embed/vNKtzmyxuoY" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section id="reviews">
+        <div class="container">
+           <h3>Отзивы</h3>
+            <div class="row">
+                <div class="col-md-3 reviews-img">
+                    <img src="img/z_a4.jpg" width="129" height="130" alt="">
+                </div>
+                <div class="col-md-9 reviews-text">
+                    <p>“ Здравствуйте! Заказал турник 3/1. Больше всего переживал за ответственность поставки да и конторы в целом.Всё что произошло дальше зашкаливает за 5 балов.прием заказа,оплата и доставка- вобщем организация просто супер.через 3 дня я забрал турник как и обещали! Приятно иметь дело с такими людьми,подсказали и помогли.Огромное спасибо что работаете чисто и предоставлеными товарами дарите людям здоровье!<br>
+                    <span>Олег Стоянов</span>
+                      </p>
+                </div>
+            </div>
+              <div class="row">
+                <div class="col-md-3 reviews-img">
+                   <img src="img/q34.jpg" width="129" height="130" alt="">
+                </div>
+                          <div class="col-md-9 reviews-text">
+                    <p>“ Привет) Заказала турник молодому человеку на 23. Вообще турник - это моя первая интернет- покупка, очень переживала, что может быть обман или ещё что-то, но как оказалось зря =) Оплатила заказ и уже через 3 дня турник приехал ко мне домой) Все детали на месте...всё круто. Заказывайте смело ! ”<br>
+<span>Аленка Колесникова</span></p>
+                </div>
+            </div>
+              <div class="row">
+                <div class="col-md-3 reviews-img">
+                <img src="img/y_b41.jpg" width="130" height="129" alt="">
+                </div>
+                <div class="col-md-9 reviews-text">
+                    <p>“ Всем привет! Так же хочу оставить и свой отзыв. Решил заказать обратный звонок и узнать, что да как. Перезвонили мне спустя минут 15, предложил несколько вариантов доставки на выбор по времени (о предоплате речь даже и не шла), либо завтра, либо сегодня но с 22.00 по 23.00. Естественно сегодня. Товар доставлен как и было обещано. Упакован, скомплектован и без дефектов. Собственно и всё, понравилось, заказал, привезли, оплатил. Ребенок опробовал первый, ткнул ножнями в подлокотник и проделал дырочку. Значит служить будет долго и честно. Спасибо, так держать!!! ”<br>
+<span>Дмитрий Топольский</span></p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <footer>
+        <div class="container">
+                 <div class="row justify-content-between">
+            <div class="col-md-auto footer-text">
+                <h4>Остались вопросы?</h4>
+                <h4>Закажите обратний звонок и мы вам перезвоним!</h4>
+            </div>
+            <div class="col-md-auto order-header">
+                   <a class="tel" href="8(929)700-28-75"><span>8(929)</span>700-28-75</a><br>
+                <a class="order" href="#" onClick="getElementById('window-call').removeAttribute('style');" type="button">Заказать звонок</a>
+                
+            </div>
+        </div>
+        </div>
+        
+           <div id="window-call" style="display:none;">
+      <div class="overlay"></div>
+      <div class="visible">
+             <button type="button" onClick="getElementById('window-call').style.display='none';"><i class="fa fa-times fa-2x" aria-hidden="true"></i></button>
+            <h4>Заказать звонок</h4>
+        <form action="">
+              <input type="text" name="name" placeholder="Имя">
+              <input type="text" name="tel" placeholder="Телефон" >
+              <a href="#">Заказать</a>
+        </form>
+      </div>
+    </div>
+    </footer>
+    
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script>window.jQuery || document.write('<script src="js/jquery-3.2.1.slim.min.js"><\/script>')</script>
+
+</body>
+</html>

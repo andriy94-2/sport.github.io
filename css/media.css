@@ -1,0 +1,108 @@
+@media(max-width:1200px){
+    .discount{
+        display: none;
+    }
+    }
+@media(max-width:975px){
+    .form-order{
+        max-width: 500px;
+    }
+    .justify-content-end {
+        justify-content: center !important;
+    }
+}
+
+@media(max-width:767px){
+    #characteristic{
+        text-align: center;
+    }   #characteristic h3, #goods h3{
+         font-size: 23px;
+        font-weight: 400;
+    }
+    .character-list ul{
+        padding-left: 0;
+    }
+    #form-bg-y form input{
+        font-size: 10px;
+    }
+    #goods{
+        text-align: center;
+    }
+    #reviews{
+        text-align: center;
+    }
+    footer{
+        text-align: center;
+    }
+    .visible{
+        left: 15% !important;
+	top: 60% !important;
+    }
+} 
+
+
+@media(max-width:496px){
+    #form-bg-y form input{
+        display: block;
+        margin: 5px auto;
+    }
+    #form-bg-y form a{
+    }
+        header{
+        text-align: center;
+    }
+    .logo{
+        float: none !important;
+    }
+    .stock{
+        display: none !important;
+    }
+     .visible{
+        left: 2% !important;
+	top: 70% !important;
+    }
+}
+@media(max-width:542px){
+      .video{
+        text-align: center;
+    }
+    .video iframe{
+        width: 400px !important;
+    }
+}
+@media(max-width:456px){
+    .visible{
+        width: 250px !important;
+    }
+}
+
+@media(max-width:419px){
+    .video{
+        text-align: center;
+    }
+    .video iframe{
+        width: 350px !important;
+    }
+
+}
+@media(max-width:360px){
+    .video{
+        text-align: center;
+    }
+    .video iframe{
+        width: 230px !important;
+    }
+}
+@media(max-width:345px){
+    .charact-price-bl1, .charact-price-bl2{
+        padding-left: 2px !important;
+        padding-right: 2px !important;
+    }
+    .charact-price-bl2{
+         padding-left: 10px !important;
+        padding-right: 5px !important;
+    }
+    .charact-img img{
+        width: 100%;
+    }
+}
